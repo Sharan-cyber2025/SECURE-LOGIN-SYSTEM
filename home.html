@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body{
+            background-color: #f0f2f5;
+            font-family: Arial;
+            text-align: center;
+        }
+        .home-box{
+            width: 400px;
+            margin: 100px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1{
+            color: #333;
+        }
+        p{
+            color: gray;
+        }
+        a{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: #b02a37;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-box">
+        <h1>Welcome {{ user }}</h1>
+        <p>You have successfully logged into the Secure Login System.</p>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>
